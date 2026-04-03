@@ -1,2 +1,3 @@
 config SHIELD_NICE60
-    def_bool $(shields_lists_contains, nice60)
+    bool "Enable Nice60 Shield"
+    default y

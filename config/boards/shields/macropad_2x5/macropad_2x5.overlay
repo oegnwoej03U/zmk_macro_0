@@ -1,83 +1,9 @@
 / {
-    compatible = "zmk,keyboard";
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-direct";
 
-    keyboard {
-        label = "2x5 ProMicro NRF52840 Direct Wire";
-        key_count = <10>;
-
-        keys {
-            compatible = "zmk,key";
-
-            key0 {
-                label = "K1";
-                pin = <&gpio0 31>;  // P0.31
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key1 {
-                label = "K2";
-                pin = <&gpio0 29>;  // P0.29
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key2 {
-                label = "K3";
-                pin = <&gpio0 2>;  // P0.02
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key3 {
-                label = "K4";
-                pin = <&gpio1 15>;  // P1.15
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key4 {
-                label = "K5";
-                pin = <&gpio1 13>;  // P1.13
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key5 {
-                label = "K6";
-                pin = <&gpio1 11>;  // P1.11
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key6 {
-                label = "K7";
-                pin = <&gpio0 10>;  // P0.10
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key7 {
-                label = "K8";
-                pin = <&gpio0 9>;  // P0.09
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key8 {
-                label = "K9";
-                pin = <&gpio1 4>; // P1.04
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-            key9 {
-                label = "K10";
-                pin = <&gpio1 6>; // P1.06
-                active_low = true;
-                // optional, but ensures internal pull-up
-                pull_up = <1>;
-            };
-        };
+        input-gpios = <
+            &gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+        >;
     };
 };

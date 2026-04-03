@@ -10,31 +10,31 @@
 
             key0 {
                 label = "K1";
-                pin = <&gpio0 2>;  // P0.02
+                pin = <&gpio0 31>;  // P0.31
             };
             key1 {
                 label = "K2";
-                pin = <&gpio0 3>;  // P0.03
+                pin = <&gpio0 29>;  // P0.29
             };
             key2 {
                 label = "K3";
-                pin = <&gpio0 4>;  // P0.04
+                pin = <&gpio0 2>;  // P0.02
             };
             key3 {
                 label = "K4";
-                pin = <&gpio0 5>;  // P0.05
+                pin = <&gpio1 15>;  // P1.15
             };
             key4 {
                 label = "K5";
-                pin = <&gpio0 6>;  // P0.06
+                pin = <&gpio1 13>;  // P1.13
             };
             key5 {
                 label = "K6";
-                pin = <&gpio0 7>;  // P0.07
+                pin = <&gpio1 11>;  // P1.11
             };
             key6 {
                 label = "K7";
-                pin = <&gpio0 8>;  // P0.08
+                pin = <&gpio0 10>;  // P0.10
             };
             key7 {
                 label = "K8";
@@ -42,11 +42,11 @@
             };
             key8 {
                 label = "K9";
-                pin = <&gpio0 10>; // P0.10
+                pin = <&gpio1 4>; // P1.04
             };
             key9 {
                 label = "K10";
-                pin = <&gpio0 11>; // P0.11
+                pin = <&gpio1 6>; // P1.06
             };
         };
     };

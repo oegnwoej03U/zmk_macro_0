@@ -1,3 +1,2 @@
-config SHIELD_NICE60
-    bool "Enable Nice60 Shield"
-    default y
+config SHIELD_MACROPAD_2X5
+    bool "Macropad 2x5"

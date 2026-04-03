@@ -1,6 +1,6 @@
-if SHIELD_NICE60
+if SHIELD_MACROPAD_2X5
 
 config ZMK_KEYBOARD_NAME
-    default "fucku"
+    default "ZMK_2X5_TEST"
 
 endif

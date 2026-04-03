@@ -1,20 +1,30 @@
 / {
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-direct";
+    // Enable GPIO key scanning
+    kscan: kscan {
+        compatible = "zmk,kscan-gpio";
+        #gpio-cells = <2>;
+        status = "okay";
+    };
 
-        #rows-cells = <1>;
-        #columns-cells = <1>;
-        input-gpios = <
-            &gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-            &gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+    // Define a direct-wire matrix (2 rows x 5 columns)
+    matrix: matrix {
+        compatible = "zmk,matrix-transform-direct";
+        rows = <2>;
+        cols = <5>;
+
+        // Assign row GPIO pins
+        row-gpios = <
+            &gpio0 2 0   // Row 0 → P0.02
+            &gpio0 3 0   // Row 1 → P0.03
+        >;
+
+        // Assign column GPIO pins
+        col-gpios = <
+            &gpio0 4 0   // Col 0 → P0.04
+            &gpio0 5 0   // Col 1 → P0.05
+            &gpio0 6 0   // Col 2 → P0.06
+            &gpio0 7 0   // Col 3 → P0.07
+            &gpio0 8 0   // Col 4 → P0.08
         >;
     };
 };

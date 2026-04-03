@@ -1,4 +1,4 @@
 
 include:
   - board: nice_nano_v2
-    shield: nice60
+    shield: macropad_2x5

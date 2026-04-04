@@ -1,2 +1,0 @@
-config SHIELD_MACROPAD_2X5
-    def_bool $(shields_list_contains,macropad_2x5)

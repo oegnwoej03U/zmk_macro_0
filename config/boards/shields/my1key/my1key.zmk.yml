@@ -1,0 +1,7 @@
+file_format: "1"
+id: my1key
+name: My 1 Key Test
+type: shield
+url: ""
+requires:
+  - pro_micro

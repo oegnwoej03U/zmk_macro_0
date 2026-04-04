@@ -1,9 +1,0 @@
-if SHIELD_MACROPAD_2X5
-
-config ZMK_KEYBOARD_NAME
-    default "ZMK_2X5_TEST"
-
-config ZMK_KSCAN_GPIO_DRIVER
-    default y
-
-endif

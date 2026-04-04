@@ -1,6 +1,2 @@
-if SHIELD_MACROPAD_2X5
-
-config ZMK_KEYBOARD_NAME
-    default "ZMK_2X5_TEST"
-
-endif
+config SHIELD_MACROPAD_2X5
+    def_bool $(shields_list_contains,macropad_2x5)

@@ -3,10 +3,4 @@ if SHIELD_MACROPAD_2X5
 config ZMK_KEYBOARD_NAME
     default "ZMK_2X5_TEST"
 
-config ZMK_USB
-    default y
-
-config ZMK_BLE
-    default n
-
 endif

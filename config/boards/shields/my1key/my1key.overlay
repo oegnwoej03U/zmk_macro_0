@@ -6,7 +6,32 @@
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
-        input-gpios
-            = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+
+        input-gpios =
+            <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
+
+    leds {
+        compatible = "zmk,rgb-underglow";
+        chain-length = <1>;          // change to your LED count
+        color-mapping = <1 0 2>;      // RGB order
+    };
+};
+
+&spi1 {
+    status = "okay";
+
+    ws2812: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        reg = <0>;
+        spi-max-frequency = <4000000>;
+
+        chain-length = <1>;
+        color-mapping = <1 0 2>;
+    };
+};
+
+/* IMPORTANT: Use a DIFFERENT pin from your kscan */
+&ws2812 {
+    data-gpios = <&gpio0 8 0>;   // ← RGB data pin (changed from P0.06)
 };

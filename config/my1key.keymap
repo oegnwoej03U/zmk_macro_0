@@ -2,24 +2,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
 / {
-    behaviors {
-    rgb_startup: rgb_startup {
-        compatible = "zmk,behavior-rgb-underglow";
-        color = <255 0 0>;   // red
-    };
-};
-
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &rgb_ug_toggle
+                &kp A
             >;
         };
     };
-};
 

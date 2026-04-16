@@ -6,14 +6,7 @@
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
-
-        input-gpios =
-            <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    };
-
-    leds {
-        compatible = "zmk,rgb-underglow";
-        chain-length = <1>;          // change to your LED count
-        color-mapping = <1 0 2>;      // RGB order
+        input-gpios
+            = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };

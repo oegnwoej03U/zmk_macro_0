@@ -17,21 +17,3 @@
         color-mapping = <1 0 2>;      // RGB order
     };
 };
-
-&spi1 {
-    status = "okay";
-
-    ws2812: ws2812@0 {
-        compatible = "worldsemi,ws2812-spi";
-        reg = <0>;
-        spi-max-frequency = <4000000>;
-
-        chain-length = <1>;
-        color-mapping = <1 0 2>;
-    };
-};
-
-/* IMPORTANT: Use a DIFFERENT pin from your kscan */
-&ws2812 {
-    data-gpios = <&gpio0 8 0>;   // ← RGB data pin (changed from P0.06)
-};

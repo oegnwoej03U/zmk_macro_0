@@ -5,6 +5,7 @@
         zmk,kscan = &kscan0;
         zmk,underglow = &led_strip;
     };
+
     default_transform: keymap_transform {
         compatible = "zmk,matrix-transform";
         rows = <2>;

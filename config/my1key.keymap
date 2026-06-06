@@ -5,11 +5,29 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_layer {   // Layer 0
+            display-name = "Base";
             bindings = <
-                &kp Q    &kp W    &kp E    &kp R    &kp T
-                &kp A    &kp S    &kp D    &kp F    &kp G
+                &kp Q &kp W &kp E &kp R
+                &kp A &kp S &mo 1 &mo 2
+            >;
+        };
+
+        lower_layer {     // Layer 1
+            display-name = "Lower";
+            bindings = <
+                &kp EXCL &kp AT &kp HASH &kp DLR
+                &trans &trans &none &none
+            >;
+        };
+
+        raise_layer {     // Layer 2
+            display-name = "Raise";
+            bindings = <
+                &kp N1 &kp N2 &kp N3 &kp N4
+                &trans &trans &none &none
             >;
         };
     };
 };
+

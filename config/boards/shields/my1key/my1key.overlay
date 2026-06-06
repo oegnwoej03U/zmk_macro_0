@@ -4,6 +4,12 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &keymap_transform;
+        zmk,physical-layout = &physical_layout;
+    };
+    physical_layout {
+        compatible = "zmk,physical-layout";
+        keys = <10>;
+        transform = <&keymap_transform>;
     };
 
     keymap_transform: keymap_transform {

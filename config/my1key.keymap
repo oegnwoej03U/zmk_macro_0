@@ -10,7 +10,7 @@
 
             bindings = <
                 &kp Q   &kp W   &kp E   &kp R   &kp T
-                &kp Y   &kp U   &kp I   &mo 1   &mo2
+                &kp Y   &kp U   &kp I   &mo 1   &mo 2
                 &studio_unlock
             >;
         };

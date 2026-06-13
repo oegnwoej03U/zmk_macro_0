@@ -12,25 +12,25 @@
         display-name = "My1Key";
         transform = <&keymap_transform>;
         keys
-            /* Col 0 — 2 keys, rotated 30.6° CW around top key center */
-            = <&key_physical_attrs 100 100   0 200 3060  50 250>
-            , <&key_physical_attrs 100 100   0 300 3060  50 250>
+            /* Col 0 — 2 keys, rotated -30.6° CCW, pivot at (50, 250) */
+            = <&key_physical_attrs 100 100   0 200 (-3060)  50 250>
+            , <&key_physical_attrs 100 100   0 300 (-3060)  50 250>
 
-            /* Col 1 — 2 keys, y stagger ~100 */
+            /* Col 1 — 2 keys */
             , <&key_physical_attrs 100 100 150 100 0 0 0>
             , <&key_physical_attrs 100 100 150 200 0 0 0>
 
-            /* Col 2 — 2 keys, y stagger ~50 */
+            /* Col 2 — 2 keys */
             , <&key_physical_attrs 100 100 250  50 0 0 0>
             , <&key_physical_attrs 100 100 250 150 0 0 0>
 
-            /* Col 3 — 3 keys, y stagger ~25 */
+            /* Col 3 — 3 keys */
             , <&key_physical_attrs 100 100 350  25 0 0 0>
             , <&key_physical_attrs 100 100 350 125 0 0 0>
-            , <&key_physical_attrs 100 100 350 225 0 0 0>
+            , <&key_physical_attrs 100 100 370 225 0 0 0>
 
-            /* Col 4 — 1 key, y stagger ~0 */
-            , <&key_physical_attrs 100 100 450   0 0 0 0>
+            /* Col 4 — 1 key */
+            , <&key_physical_attrs 100 100 470 225 0 0 0>
             ;
     };
 

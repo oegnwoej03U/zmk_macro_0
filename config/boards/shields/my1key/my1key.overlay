@@ -31,9 +31,10 @@
 
             /* Col 4 — 1 key */
             , <&key_physical_attrs 100 100 470 225 0 0 0>
-            ;
+            
             /* ZMK studio unlock pin */
             , <&key_physical_attrs 100 100 470 350 0 0 0>
+            ;
     };
 
     keymap_transform: keymap_transform {

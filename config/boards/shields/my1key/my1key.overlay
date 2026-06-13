@@ -13,8 +13,8 @@
         transform = <&keymap_transform>;
         keys
             /* Col 0 — 2 keys, rotated -30.6° CCW, pivot at (50, 250) */
-            = <&key_physical_attrs 100 100   0 200 (-3060)  50 250>
-            , <&key_physical_attrs 100 100   0 300 (-3060)  50 250>
+            = <&key_physical_attrs 100 100   0 200 (0-3060)  50 250>
+            , <&key_physical_attrs 100 100   0 300 (0-3060)  50 250>
 
             /* Col 1 — 2 keys */
             , <&key_physical_attrs 100 100 150 100 0 0 0>

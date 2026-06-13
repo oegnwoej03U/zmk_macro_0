@@ -12,18 +12,25 @@
         display-name = "My1Key";
         transform = <&keymap_transform>;
         keys
-            = <&key_physical_attrs 100 100   0  50 0 0 0>
+            /* Col 0 — rotated 30.6° clockwise around each key's own center */
+            /* pre-rotation position estimated from photo */
+            = <&key_physical_attrs 100 100   0 150 3060  50 200>
+            , <&key_physical_attrs 100 100   0 250 3060  50 300>
 
-            , <&key_physical_attrs 100 100 100  25 0 0 0>
-            , <&key_physical_attrs 100 100 200   0 0 0 0>
-            , <&key_physical_attrs 100 100 300  25 0 0 0>
-            , <&key_physical_attrs 100 100 400  50 0 0 0>
-            
-            , <&key_physical_attrs 100 100   0 150 0 0 0>
-            , <&key_physical_attrs 100 100 100 125 0 0 0>
-            , <&key_physical_attrs 100 100 200 100 0 0 0>
-            , <&key_physical_attrs 100 100 300 125 0 0 0>
-            , <&key_physical_attrs 100 100 400 150 0 0 0>
+            /* Col 1 — 0.5u lower than col 2 */
+            , <&key_physical_attrs 100 100 150  50 0 0 0>
+            , <&key_physical_attrs 100 100 150 150 0 0 0>
+
+            /* Col 2 — reference column, highest */
+            , <&key_physical_attrs 100 100 250   0 0 0 0>
+            , <&key_physical_attrs 100 100 250 100 0 0 0>
+
+            /* Col 3 — 0.25u lower than col 2 */
+            , <&key_physical_attrs 100 100 350  25 0 0 0>
+            , <&key_physical_attrs 100 100 350 125 0 0 0>
+
+            /* Col 4 — 1 key only, 0.5u lower than col 2 */
+            , <&key_physical_attrs 100 100 450  50 0 0 0>
             ;
     };
 

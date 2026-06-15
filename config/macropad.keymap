@@ -43,72 +43,72 @@
     };
 
     macros {
-        math_inline: math_inline {
+        table_of_contents: math_inline {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_SHIFT>,
+                <&kp LCTRL &kp RIGHT_SHIFT>,
                 <&macro_tap>,
                 <&kp N1>,
                 <&macro_release>,
-                <&kp RIGHT_SHIFT>;
+                <&kp RIGHT_SHIFT &kp LCTRL>;
 
             label = "MATH_INLINE";
         };
 
-        math_block: math_block {
+        colour_text: math_block {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_SHIFT>,
+                <&kp RIGHT_SHIFT &kp LCTRL>,
                 <&macro_tap>,
                 <&kp N2>,
                 <&macro_release>,
-                <&kp RIGHT_SHIFT>;
+                <&kp RIGHT_SHIFT &kp LCTRL>;
 
             label = "MATH_BLOCK";
         };
 
-        table_of_contents: table_of_contents {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RIGHT_SHIFT>,
-                <&macro_tap>,
-                <&kp NUMBER_6>,
-                <&macro_release>,
-                <&kp RIGHT_SHIFT>;
-
-            label = "TABLE_OF_CONTENTS";
-        };
-
-        file_property: file_property {
+        graph: table_of_contents {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp SEMI>,
+                <&kp G>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "FILE_PROPERTY";
+            label = "TABLE_OF_CONTENTS";
         };
 
-        colour_text: colour_text {
+        math_block: file_property {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_SHIFT>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
                 <&macro_tap>,
-                <&kp N9>,
+                <&kp N3>,
                 <&macro_release>,
-                <&kp RIGHT_SHIFT>;
+                <&kp LEFT_SHIFT &kp LCTRL>;
+
+            label = "FILE_PROPERTY";
+        };
+
+        table: colour_text {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp RIGHT_SHIFT>,
+                <&macro_tap>,
+                <&kp N4>,
+                <&macro_release>,
+                <&kp RIGHT_SHIFT &kp LCTRL>;
 
             label = "COLOUR_TEXT";
         };
@@ -118,11 +118,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_SHIFT>,
+                <&kp LCTRL &kp RIGHT_SHIFT>,
                 <&macro_tap>,
-                <&kp N3>,
+                <&kp N5>,
                 <&macro_release>,
-                <&kp RIGHT_SHIFT>;
+                <&kp RIGHT_SHIFT &kp LCTRL>;
 
             label = "HEADING_1";
         };
@@ -132,11 +132,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_SHIFT>,
+                <&kp LCTRL &kp RIGHT_SHIFT>,
                 <&macro_tap>,
-                <&kp N4>,
+                <&kp N6>,
                 <&macro_release>,
-                <&kp RIGHT_SHIFT>;
+                <&kp RIGHT_SHIFT &kp LCTRL>;
 
             label = "HEADING_3";
         };
@@ -146,25 +146,25 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_SHIFT>,
+                <&kp LCTRL &kp RIGHT_SHIFT>,
                 <&macro_tap>,
-                <&kp N5>,
+                <&kp N7>,
                 <&macro_release>,
-                <&kp RIGHT_SHIFT>;
+                <&kp RIGHT_SHIFT &kp LCTRL>;
 
             label = "HEADING_6";
         };
 
-        quote_block: quote_block {
+        split_right: quote_block {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_SHIFT>,
+                <&kp LCTRL &kp LEFT_ALT &kp RIGHT_SHIFT>,
                 <&macro_tap>,
-                <&kp N7>,
+                <&kp N1>,
                 <&macro_release>,
-                <&kp RIGHT_SHIFT>;
+                <&kp RIGHT_SHIFT &kp LEFT_ALT &kp LCTRL>;
 
             label = "QUOTE_BLOCK";
         };
@@ -293,6 +293,34 @@
             #binding-cells = <0>;
             bindings = <&kp BSLH &kp T &kp H &kp E &kp R &kp E &kp F &kp O &kp R &kp E>;
             label = "TEX_THEREFORE";
+        };
+
+        quote_block: quote_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp RIGHT_SHIFT>,
+                <&macro_tap>,
+                <&kp N8>,
+                <&macro_release>,
+                <&kp RIGHT_SHIFT &kp LCTRL>;
+
+            label = "QUOTE_BLOCK";
+        };
+
+        math_inline: math_inline {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp RIGHT_SHIFT>,
+                <&macro_tap>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp RIGHT_SHIFT &kp LCTRL>;
+
+            label = "MATH_INLINE";
         };
     };
 

@@ -168,6 +168,132 @@
 
             label = "QUOTE_BLOCK";
         };
+
+        tex_begin_align: tex_begin_align {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp B &kp E &kp G &kp I &kp N &kp LBRC &kp A &kp L &kp I &kp G &kp N &kp RBRC &kp RET &kp RET &kp BSLH &kp E &kp N &kp D &kp LBRC &kp A &kp L &kp I &kp G &kp N &kp RBRC>;
+            label = "TEX_BEGIN_ALIGN";
+        };
+
+        tex_begin_cases: tex_begin_cases {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp B &kp E &kp G &kp I &kp N &kp LBRC &kp C &kp A &kp S &kp E &kp S &kp RBRC &kp RET &kp RET &kp BSLH &kp BSLH &kp RET &kp RET &kp BSLH &kp E &kp N &kp D &kp LBRC &kp C &kp A &kp S &kp E &kp S &kp RBRC>;
+            label = "TEX_BEGIN_CASES";
+        };
+
+        tex_text: tex_text {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp T &kp E &kp X &kp T &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "TEX_TEXT";
+        };
+
+        tex_textbf: tex_textbf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp T &kp E &kp X &kp T &kp B &kp F &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "TEX_TEXTBF";
+        };
+
+        tex_mathbb: tex_mathbb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp M &kp A &kp T &kp H &kp B &kp B &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "TEX_MATHBB";
+        };
+
+        tex_set: tex_set {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp S &kp E &kp T &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "TEX_SET";
+        };
+
+        tex_superscript: tex_exponential {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "TEX_EXPONENTIAL";
+        };
+
+        tex_subscript: tex_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "TEX_SUBSCRIPT";
+        };
+
+        tex_tag: tex_tag {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp T &kp A &kp G &kp STAR &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "TEX_TAG";
+        };
+
+        tex_cancel: tex_cancel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp C &kp A &kp N &kp C &kp E &kp L &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "TEX_CANCEL";
+        };
+
+        tex_overbrace: tex_overbrace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp O &kp V &kp E &kp R &kp B &kp R &kp A &kp C &kp E &kp LBRC &kp RBRC &kp CARET &kp LBRC &kp BSLH &kp T &kp E &kp X &kp T &kp LBRC &kp RBRC &kp RBRC>;
+            label = "TEX_OVERBRACE";
+        };
+
+        tex_underbrace: tex_underbrace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp U &kp N &kp D &kp E &kp R &kp B &kp R &kp A &kp C &kp E &kp LBRC &kp RBRC &kp UNDER &kp LBRC &kp BSLH &kp T &kp E &kp X &kp T &kp LBRC &kp RBRC &kp RBRC>;
+            label = "TEX_UNDERBRACE";
+        };
+
+        tex_sum: tex_sum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp S &kp U &kp M &kp CARET &kp LBRC &kp RBRC &kp UNDER &kp LBRC &kp RBRC>;
+            label = "TEX_SUM";
+        };
+
+        tex_int: tex_int {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp I &kp N &kp T &kp CARET &kp LBRC &kp RBRC &kp UNDER &kp LBRC &kp RBRC &kp LBRC &kp RBRC &kp BSLH &kp S &kp P &kp A &kp C &kp E &kp SPACE &kp D &kp LBRC &kp RBRC>;
+            label = "TEX_INT";
+        };
+
+        tex_frac: tex_frac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp F &kp R &kp A &kp C &kp LBRC &kp RBRC &kp LBRC &kp RBRC &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
+            label = "TEX_FRAC";
+        };
+
+        tex_infin: tex_infin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp I &kp N &kp F &kp T &kp Y>;
+            label = "TEX_INFIN";
+        };
+
+        tex_implies: tex_implies {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp I &kp M &kp P &kp L &kp I &kp E &kp S>;
+            label = "TEX_IMPLIES";
+        };
+
+        tex_therefore: tex_therefore {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp T &kp H &kp E &kp R &kp E &kp F &kp O &kp R &kp E>;
+            label = "TEX_THEREFORE";
+        };
     };
 
     keymap {

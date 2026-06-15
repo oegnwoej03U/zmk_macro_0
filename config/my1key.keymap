@@ -46,14 +46,16 @@
         math_inline: math_inline {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_SHIFT &kp N1>;
+            bindings = <&kp RIGHT_SHIFT &kp N1>, <&macro_press>;
+
             label = "MATH_INLINE";
         };
 
         math_block: math_block {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_SHIFT &kp N2>;
+            bindings = <&kp RIGHT_SHIFT &kp N2>, <&macro_press>;
+
             label = "MATH_BLOCK";
         };
     };

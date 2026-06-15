@@ -1,6 +1,0 @@
-if SHIELD_MY1KEY
-
-config ZMK_KEYBOARD_NAME
-    default "My1Key"
-
-endif

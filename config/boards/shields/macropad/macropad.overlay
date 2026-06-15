@@ -9,7 +9,7 @@
 
     my_layout: physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "My1Key";
+        display-name = "macropad";
         transform = <&keymap_transform>;
         keys
             = <&key_physical_attrs 100 100   0 200 (0-3060)  50 250>

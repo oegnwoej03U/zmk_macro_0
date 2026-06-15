@@ -42,6 +42,22 @@
         };
     };
 
+    macros {
+        math_inline: math_inline {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_SHIFT &kp N1>;
+            label = "MATH_INLINE";
+        };
+
+        math_block: math_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_SHIFT &kp N2>;
+            label = "MATH_BLOCK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
